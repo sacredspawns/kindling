@@ -3,7 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Privacy Policy — Kindling: Last Fire</title>
+  <title>Kindling: Last Fire — Sacred Spawns</title>
+  <meta name="description" content="A card-driven survival roguelike. Survive 30 days of winter. Keep the fire lit. Available on iOS and Android.">
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
@@ -12,120 +13,184 @@
       background: #0e0b18;
       color: #ccc8b8;
       line-height: 1.7;
-      padding: 48px 24px 80px;
+      padding: 0 24px 80px;
     }
 
-    .wrap {
-      max-width: 680px;
-      margin: 0 auto;
-    }
+    .wrap { max-width: 720px; margin: 0 auto; }
 
-    .flame {
-      font-size: 2.4rem;
-      display: block;
+    nav {
+      padding: 24px 0;
       text-align: center;
-      margin-bottom: 12px;
+      border-bottom: 1px solid #1f1a36;
+      margin-bottom: 56px;
     }
-
-    h1 {
-      font-size: 1.8rem;
-      font-weight: 700;
-      color: #f0a040;
-      text-align: center;
-      margin-bottom: 4px;
-    }
-
-    .subtitle {
-      text-align: center;
-      font-size: 0.95rem;
+    nav a {
       color: #887a60;
-      margin-bottom: 40px;
+      text-decoration: none;
+      font-size: 0.9rem;
+      margin: 0 14px;
+      letter-spacing: 0.04em;
+    }
+    nav a:hover { color: #f0a040; }
+    nav .brand {
+      display: block;
+      margin-bottom: 14px;
+      color: #f0a040;
+      font-weight: 700;
+      font-size: 1rem;
+      letter-spacing: 0.08em;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 32px 0 64px;
+    }
+    .flame { font-size: 3.2rem; display: block; margin-bottom: 16px; }
+    h1 {
+      font-size: 2.4rem;
+      font-weight: 700;
+      color: #ffd880;
+      margin-bottom: 12px;
+      letter-spacing: 0.01em;
+    }
+    .tagline {
+      font-size: 1.15rem;
+      color: #b8b0a0;
+      margin-bottom: 36px;
+      font-style: italic;
+    }
+
+    .store-row {
+      display: flex;
+      gap: 14px;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-top: 12px;
+    }
+    .store-btn {
+      display: inline-block;
+      background: #1a1430;
+      border: 1px solid #4a3a70;
+      color: #ffd880;
+      padding: 14px 26px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 0.95rem;
+      transition: all 0.15s ease;
+    }
+    .store-btn:hover {
+      background: #2a2148;
+      border-color: #f0a040;
     }
 
     h2 {
-      font-size: 1.05rem;
-      font-weight: 600;
+      font-size: 1.3rem;
+      font-weight: 700;
       color: #e8c878;
-      margin: 32px 0 8px;
-      padding-bottom: 4px;
+      margin: 48px 0 12px;
+      padding-bottom: 6px;
       border-bottom: 1px solid #2a2040;
     }
 
-    p { margin-bottom: 12px; color: #b8b0a0; }
+    p { margin-bottom: 16px; color: #b8b0a0; }
 
-    ul {
-      margin: 8px 0 12px 20px;
-      color: #b8b0a0;
+    .features {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 16px;
+      margin: 32px 0;
     }
-
-    ul li { margin-bottom: 6px; }
-
-    .callout {
-      background: #1a1430;
+    .feature {
+      background: #15102a;
       border-left: 3px solid #f0a040;
-      border-radius: 4px;
-      padding: 14px 18px;
-      margin: 24px 0;
-      color: #d0c8a8;
-      font-size: 0.95rem;
+      padding: 18px 20px;
+      border-radius: 6px;
     }
+    .feature h3 {
+      color: #ffd880;
+      font-size: 1.05rem;
+      margin-bottom: 6px;
+    }
+    .feature p { font-size: 0.92rem; margin-bottom: 0; }
 
-    a { color: #f0a040; text-decoration: none; }
-    a:hover { text-decoration: underline; }
-
-    .updated {
-      margin-top: 48px;
-      font-size: 0.85rem;
-      color: #665a48;
+    footer {
+      margin-top: 80px;
+      padding-top: 32px;
+      border-top: 1px solid #1f1a36;
       text-align: center;
+      color: #665a48;
+      font-size: 0.85rem;
     }
+    footer a { color: #887a60; text-decoration: none; margin: 0 10px; }
+    footer a:hover { color: #f0a040; }
   </style>
 </head>
 <body>
   <div class="wrap">
 
-    <span class="flame">🔥</span>
-    <h1>Privacy Policy</h1>
-    <p class="subtitle">Kindling: Last Fire &mdash; Sacred Spawns</p>
+    <nav>
+      <span class="brand">SACRED SPAWNS</span>
+      <a href="index.html">Home</a>
+      <a href="support.html">Support</a>
+      <a href="privacy.html">Privacy</a>
+      <a href="terms.html">Terms</a>
+    </nav>
 
-    <div class="callout">
-      <strong>Short version:</strong> Kindling does not collect, transmit, or share any personal information. Everything stays on your device.
+    <section class="hero">
+      <span class="flame">🔥</span>
+      <h1>Kindling: Last Fire</h1>
+      <p class="tagline">A card-driven survival roguelike.<br/>Survive the winter. Keep the fire lit.</p>
+      <div class="store-row">
+        <a class="store-btn" href="https://apps.apple.com/app/id6762586154">App Store</a>
+        <a class="store-btn" href="https://play.google.com/store/apps/details?id=com.sacredspawns.kindling">Google Play</a>
+      </div>
+    </section>
+
+    <h2>The Game</h2>
+    <p>The cold came early this year. You have a handful of cards, a fire that must not go out, and thirty days to survive. Each dawn you draw a hand of action cards — gather, hunt, build, trap, rest, forge. Every choice shifts your fire, your warmth, your wood, your food, your health. Spend poorly and the night will take you.</p>
+    <p>Every five days a boss attacks. Wolves, raiders, frost bears, the Wendigo, the Winter King and beyond. Forge weapons, craft armor, build structures, earn perks to stand a chance.</p>
+
+    <h2>What's Inside</h2>
+    <div class="features">
+      <div class="feature">
+        <h3>165 cards across 9 tiers</h3>
+        <p>Deep deckbuilding. Unlock new cards each run.</p>
+      </div>
+      <div class="feature">
+        <h3>8 survival campaigns</h3>
+        <p>From First Light to The Nameless Year. Each with its own rules.</p>
+      </div>
+      <div class="feature">
+        <h3>16 boss variants</h3>
+        <p>Including a phase-two endgame.</p>
+      </div>
+      <div class="feature">
+        <h3>Traveler arcs</h3>
+        <p>Strangers at the fire. Choices that echo days later.</p>
+      </div>
+      <div class="feature">
+        <h3>Meta progression</h3>
+        <p>Spend Tinder at the Hearth on permanent upgrades.</p>
+      </div>
+      <div class="feature">
+        <h3>Premium, the way it used to be</h3>
+        <p>No ads. No IAP. No accounts. No network required.</p>
+      </div>
     </div>
 
-    <h2>What We Collect</h2>
-    <p>Nothing that leaves your device. Kindling stores the following data <strong>locally only</strong>:</p>
-    <ul>
-      <li><strong>Save data</strong> &mdash; your current run progress, stored in the app's private storage.</li>
-      <li><strong>Settings</strong> &mdash; preferences like mute state, saved locally.</li>
-      <li><strong>Play analytics</strong> &mdash; a local log of gameplay events (cards played, runs completed, days survived). This file lives only on your device and is never sent anywhere.</li>
-    </ul>
+    <h2>About Sacred Spawns</h2>
+    <p>Kindling is built by Sacred Spawns &mdash; a small studio that makes one game at a time, on purpose. We don't sell data, run ads, or gate content behind purchases. Buy a game, own it, play it offline.</p>
+    <p>For questions or feedback, reach us at <a href="mailto:support@sacredspawns.com" style="color:#f0a040;text-decoration:none;">support@sacredspawns.com</a>.</p>
 
-    <h2>What We Do Not Collect</h2>
-    <ul>
-      <li>No name, email address, or account information</li>
-      <li>No location data</li>
-      <li>No device identifiers</li>
-      <li>No usage data sent to any server</li>
-      <li>No crash reports transmitted externally</li>
-    </ul>
-
-    <h2>Third-Party Services</h2>
-    <p>Kindling contains no third-party SDKs, advertising networks, or analytics services. There are no in-app purchases, accounts, or social features.</p>
-    <p>The game is distributed through the Google Play Store and Apple App Store. Those platforms have their own privacy policies governing data they collect independently of this app.</p>
-
-    <h2>Network Access</h2>
-    <p>Kindling makes no network requests. There is no server, no telemetry endpoint, and no cloud sync. The game works entirely offline.</p>
-
-    <h2>Children</h2>
-    <p>Kindling does not knowingly collect any information from anyone, including children under 13. Because no data is collected at all, the game is safe for all ages from a privacy standpoint.</p>
-
-    <h2>Changes to This Policy</h2>
-    <p>If this policy ever changes, the updated version will be posted at this URL with a new effective date.</p>
-
-    <h2>Contact</h2>
-    <p>Questions? Reach us at <a href="mailto:support@sacredspawns.com">support@sacredspawns.com</a>.</p>
-
-    <p class="updated">Effective date: May 6, 2026</p>
+    <footer>
+      <p>© 2026 Sacred Spawns. All rights reserved.</p>
+      <p style="margin-top: 10px;">
+        <a href="privacy.html">Privacy Policy</a> ·
+        <a href="terms.html">Terms of Use</a> ·
+        <a href="support.html">Support</a>
+      </p>
+    </footer>
 
   </div>
 </body>
